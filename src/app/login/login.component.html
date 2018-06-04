@@ -26,3 +26,78 @@
   <!-- </div> -->
 </nav>
 
+<div class="login-custom">
+  <div class="container">
+    <div class="row row-custom">
+      <div class="col-sm-3 col-md-3 col-xs-3 col-lg-3"></div>
+      <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6">
+        <div class="row">
+          <div class="col-sm-3 col-md-3 col-xs-3 col-lg-3"></div>
+          <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6">
+            <p class="font-12">Sign in with Email</p>
+            <hr>
+          </div>
+          <div class="col-sm-3 col-md-3 col-xs-3 col-lg-3"></div>
+        </div>
+        <div class="row">
+          <form action="" name="registration">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+              <div class="form-group">
+         <!--      <input type="email" name="email" placeholder="email" [(ngModel)]="email" #emailRef="ngModel" class="form-control" pattren="[a-z]+[A-Z]+[0-9]" required
+         [ngClass]="(emailRef.invalid && emailRef.touched) ? 'red' : ''">
+         <p *ngIf="(emailRef.invalid && emailRef.touched)">email is Required</p> -->
+        
+                <input type="email" class="form-control margin-pop"  placeholder="Email" pattern="[a-z]*[A-Z]*[0-9]*@*" required 
+                name="email" [ngStyle]="{'background' : 'url(./assets/Company_Green.png)'}"
+                [(ngModel)]="email" #emailRef="ngModel" required
+         [ngClass]="(emailRef.invalid && emailRef.touched) ? 'red' : ''">
+         <p *ngIf="(emailRef.invalid && emailRef.touched)">Email is Required</p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+              <div class="form-group">
+              <input type="password" name="password" placeholder="password" [(ngModel)]="password" #pawRef="ngModel" class="form-control" required
+         [ngClass]="(pawRef.invalid && pawRef.touched) ? 'red' : ''">
+         <p *ngIf="(pawRef.invalid && pawRef.touched)">password is Required</p>
+                <!-- <input type="password" class="form-control margin-images" id="password-check" placeholder="Password" name="password"> --></div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12">
+               <span class="span-move">Forgot Password?</span>
+             </div>
+             <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12">
+               <button type="submit" class="sign-custom" class="btn btn-success" >Sign in</button>
+             </div>
+             <div class="band-or">Or</div>
+           </form>
+         </div>
+       </div>
+       <div class="col-sm-3 col-md-3 col-xs-3 col-lg-3"></div>
+     </div>
+     <div class="row">
+      <div class="col-sm-4 col-md-4 col-xs-4 col-lg-4"></div>
+      <div class="col-sm-4 col-md-4 col-xs-4 col-lg-4">
+       <button class="button button1"><p class="fa fa-linkedin" aria-hidden="true"></p>Connect with Linkedin</button>
+     </div>
+     <div class="col-sm-3 col-md-3 col-xs-3 col-lg-3"></div>
+   </div>
+   <div class="row">
+    <div class="col-sm-4 col-md-4 col-xs-4 col-lg-4"></div>
+    <div class="col-sm-4 col-md-4 col-xs-4 col-lg-4">
+      <p class="para-custom">Don't have an account? Apply to Konnexe</p>
+    </div>
+    <div class="col-sm-4 col-md-4 col-xs-4 col-lg-4"></div>
+  </div>
+  <div class="row foot-fix">
+    <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6">
+      <ul>
+        <li>Privacy Police</li>
+        <li>User Agreement</li>
+        <li class="last-check">About</li>
+      </ul>
+    </div>
+    <div class="col-sm-6 col-md-6 col-xs-6 col-lg-6">
+      <footer class="foot"> &copy; COPYRIGHT KONNEXE.ALL RIGHTS RESERVED</footer>
+    </div>
+  </div>
+</div>
+
